@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form / HTML / Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        body{
+            height: 100vh;
+        }
+
+    </style>
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center">
+    <form class="form border rounded w-75">
+        <fieldset class="">
+            <legend class="form-control m-0 bg-light rounded-0 fw-bold">Payment form example</legend>
+            <div class="p-3">
+
+                    <p class=" alert alert-danger m-0 px-2 b">Some fileds are missing</p>
+                <div class="row">
+                    <div class="col-5">
+                        <label for="card" class="form-control border-0 fw-bold">Card #</label>
+                        <input type="number" class="form-control" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="col-3">
+                        <label for="card" class="form-control border-0 fw-bold">CVC #</label>
+                        <input type="number" class="form-control" placeholder="0000">
+                    </div>
+                    <div class="col-4">
+                        <label for="card" class="form-control border-0 fw-bold">Ammount</label>
+                        <div class="d-flex">
+                            <p class="fw-bold" class="form-control">$</p><input type="number" class="form-control" placeholder="Amount">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="card" class="form-control border-0 fw-bold">First Name</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-6">
+                        <label for="card" class="form-control border-0 fw-bold">Last Name</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="card" class="form-control border-0 fw-bold">City</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                    <div class="col-3">
+                        <label for="card" class="form-control border-0 fw-bold">State</label>
+                        <select name="State" id="state" class="form-control">
+                            <option value="0" class="form-control">Pick a state</option>
+                            <option value="NY" class="form-control">New York</option>
+                            <option value="NJ" class="form-control">New Jersey</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="card" class="form-control border-0 fw-bold">Postal Code</label>
+                        <input type="text" class="form-control" >
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="card" class="form-control border-0 fw-bold">We accept:</label>
+                        <div class="bg-secondary d-flex justify-content-between w-25 p-2 rounded">
+                            <div class="d-flex">
+                                <input name="credit-card" type="radio" checked>
+                                <i class="text-white fa-brands fa-cc-visa"></i>
+                            </div>
+                            <div class="d-flex">
+                                <input name="credit-card" type="radio">
+                                <i class="text-white fa-brands fa-cc-visa"></i>
+                            </div>
+                            <div class="d-flex">
+                                <input name="credit-card" type="radio">
+                                <i class="text-white fa-brands fa-cc-diners-club"></i>
+                            </div>
+                            <div class="d-flex">
+                                <input name="credit-card" type="radio">
+                                <i class="text-white fa-brands fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <label for="card" class="form-control border-0 fw-bold">Message Code</label>
+                        <textarea type="text" class="form-control"></textarea>
+                        <label class="text-secondary" style="font-size: 12px;">Add any notes here.</p>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <div class="bg-light border p-2 d-flex justify-content-end gap-2">
+            <button class="btn btn-secondary">Cancel</button>
+            <button class="btn btn-primary">Send</button>
+        </div>
+    </form>
+</body>
+</html>
